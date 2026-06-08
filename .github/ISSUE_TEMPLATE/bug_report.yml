@@ -1,0 +1,33 @@
+name: 问题反馈
+description: 报告图片超分辨率工具的问题
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: 工具版本
+      placeholder: v1.0.4
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 版本
+      placeholder: Windows 11 23H2
+  - type: input
+    id: gpu
+    attributes:
+      label: 显卡型号和显存
+      placeholder: NVIDIA RTX 4060 8GB
+  - type: textarea
+    id: steps
+    attributes:
+      label: 出现问题前做了什么
+      description: 请写出下载、安装环境、选择图片、开始处理等步骤。
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: 软件运行状态文字
+      description: 可以粘贴窗口底部运行状态里的文字。

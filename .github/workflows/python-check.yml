@@ -1,0 +1,41 @@
+name: Python check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Syntax check
+        run: |
+          python - <<'PY'
+          import ast
+          from pathlib import Path
+          for file_name in ["dlss_like_super_resolution.py", "dlss_like_super_resolution_gui.py"]:
+              ast.parse(Path(file_name).read_text(encoding="utf-8"), filename=file_name)
+          PY
+      - name: Repository file check
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          bad = []
+          for path in Path('.').rglob('*'):
+              if not path.is_file() or '.git' in path.parts:
+                  continue
+              rel = path.as_posix()
+              suffix = path.suffix.lower()
+              if '.venv' in path.parts or '__pycache__' in path.parts or suffix in {'.pyc', '.pyo', '.download', '.001'}:
+                  bad.append(rel)
+              if path.parts[:1] == ('models',) and suffix in {'.pth', '.pt', '.onnx'}:
+                  bad.append(rel)
+          if bad:
+              raise SystemExit("Bad files:\n" + "\n".join(bad))
+          PY

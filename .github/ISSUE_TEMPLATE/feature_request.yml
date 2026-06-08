@@ -1,0 +1,15 @@
+name: 功能建议
+description: 提出图片超分辨率工具的新功能建议
+labels: [enhancement]
+body:
+  - type: textarea
+    id: request
+    attributes:
+      label: 想增加什么功能
+      description: 请说明使用场景和期望效果。
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: 这个功能能解决什么问题

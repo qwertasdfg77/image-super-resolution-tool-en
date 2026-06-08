@@ -1,0 +1,26 @@
+Image Super Resolution Tool v1.1.2
+
+Recommended workflow:
+1. Download "ImageSuperResolutionTool-EN-v1.1.2-Setup.exe" from GitHub Latest Release.
+2. Run the installer.
+3. Choose an install location.
+4. Open the app from the desktop shortcut after installation.
+5. On first use, click "Install/Check Runtime" in the lower-left area of the app.
+6. After the runtime installation finishes, choose an image and output folder, then start upscaling.
+
+Model guide:
+- ATD Official Super-Resolution Model: default model, matching the previous Transformer version effect.
+- HAT High-Quality Super-Resolution Model: stronger detail and sharpness, but slower and uses more VRAM.
+- Real-ESRGAN General Photo Model: balanced speed and quality.
+- Real-ESRGAN Anime and Illustration Model: suitable for anime, illustrations, and similar artwork.
+
+Notes:
+- The installer already includes the four models above. Users do not need to download models separately.
+- The installer includes a launcher that opens the app UI directly, and it does not include sample photos.
+- If Python is not installed system-wide, the app should still open first and should not open python.org.
+- The local Python runtime, CUDA PyTorch, and other dependencies are downloaded through the in-app visual runtime installer.
+- RTX 4060 8GB users should start with the default ATD model. If processing is too slow, switch to Real-ESRGAN General Photo Model.
+
+Recommended hardware:
+- Windows 10 / Windows 11
+- NVIDIA RTX 4060 8GB or higher

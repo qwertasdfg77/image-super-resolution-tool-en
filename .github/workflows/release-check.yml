@@ -1,0 +1,19 @@
+name: Release asset check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  latest-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check latest release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          gh release view --repo "$GITHUB_REPOSITORY" --json tagName,name,assets
+          gh release view --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name' | grep -x 'ImageSuperResolutionTool-EN-v1.1.2-Setup.exe'
+          gh release view --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name' | grep -x 'SHA256.txt'
