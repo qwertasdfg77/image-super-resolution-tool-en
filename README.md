@@ -1,6 +1,17 @@
 # Image Super Resolution Tool
 
+[![Latest Release](https://img.shields.io/github/v/release/qwertasdfg77/image-super-resolution-tool-en?label=latest)](https://github.com/qwertasdfg77/image-super-resolution-tool-en/releases/latest)
+[![Download](https://img.shields.io/badge/download-single%20installer-brightgreen)](https://github.com/qwertasdfg77/image-super-resolution-tool-en/releases/latest)
+[![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078d4)](https://github.com/qwertasdfg77/image-super-resolution-tool-en/releases/latest)
+[![NVIDIA CUDA](https://img.shields.io/badge/NVIDIA-CUDA-76b900)](https://developer.nvidia.com/cuda-zone)
+[![Models](https://img.shields.io/badge/models-ATD%20%7C%20HAT%20%7C%20Real--ESRGAN-orange)](THIRD_PARTY_NOTICES.md)
+[![License](https://img.shields.io/github/license/qwertasdfg77/image-super-resolution-tool-en)](LICENSE)
+
 A Windows GUI image upscaling tool. Current public version: `v1.1.2`. It is designed for regular users and does not require writing code.
+
+Keywords: image super-resolution, AI upscaling, photo enhancement, anime upscaling, NVIDIA CUDA, RTX 4060, ATD, HAT, Real-ESRGAN.
+
+Chinese version: [Chinese repository](https://github.com/qwertasdfg77/image-super-resolution-tool)
 
 ## Download
 
