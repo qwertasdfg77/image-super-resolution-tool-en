@@ -2,7 +2,7 @@ The GitHub source repository does not store .pth model files directly.
 
 Download the single-file installer from Latest Release:
 
-ImageSuperResolutionTool-EN-v1.1.2-Setup.exe
+ImageSuperResolutionTool-EN-v1.1.3-Setup.exe
 
 The installer includes four super-resolution models:
 

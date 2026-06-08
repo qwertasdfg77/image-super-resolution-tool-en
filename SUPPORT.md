@@ -8,7 +8,7 @@ https://github.com/qwertasdfg77/image-super-resolution-tool-en/issues
 
 When reporting a problem, include:
 
-- Tool version, for example `v1.1.2`
+- Tool version, for example `v1.1.3`
 - Windows version
 - NVIDIA GPU model and VRAM
 - Install location

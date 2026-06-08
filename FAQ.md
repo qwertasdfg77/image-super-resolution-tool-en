@@ -2,7 +2,7 @@
 
 ## Why is the installer large?
 
-Because the `v1.1.2` installer includes four super-resolution models, so users do not need separate model downloads.
+Because the `v1.1.3` installer includes four super-resolution models, so users do not need separate model downloads.
 
 ## Do I still need to install a runtime?
 
@@ -10,7 +10,7 @@ Yes. The installer includes models and a launcher that opens the app UI directly
 
 ## How do I use the one-click installer?
 
-Download `ImageSuperResolutionTool-EN-v1.1.2-Setup.exe` from Release, run it, and choose an install location. A desktop shortcut will be created after installation.
+Download `ImageSuperResolutionTool-EN-v1.1.3-Setup.exe` from Release, run it, and choose an install location. A desktop shortcut will be created after installation.
 
 ## Will my photos be uploaded to GitHub?
 

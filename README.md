@@ -7,7 +7,7 @@
 [![Models](https://img.shields.io/badge/models-ATD%20%7C%20HAT%20%7C%20Real--ESRGAN-orange)](THIRD_PARTY_NOTICES.md)
 [![License](https://img.shields.io/github/license/qwertasdfg77/image-super-resolution-tool-en)](LICENSE)
 
-A Windows GUI image upscaling tool. Current public version: `v1.1.2`. It is designed for regular users and does not require writing code.
+A Windows GUI image upscaling tool. Current public version: `v1.1.3`. It is designed for regular users and does not require writing code.
 
 Keywords: image super-resolution, AI upscaling, photo enhancement, anime upscaling, NVIDIA CUDA, RTX 4060, ATD, HAT, Real-ESRGAN.
 
@@ -17,14 +17,14 @@ Chinese version: [Chinese repository](https://github.com/qwertasdfg77/image-supe
 
 Download one installer from the Latest Release page:
 
-- `ImageSuperResolutionTool-EN-v1.1.2-Setup.exe`
+- `ImageSuperResolutionTool-EN-v1.1.3-Setup.exe`
 
 Latest Release:
 https://github.com/qwertasdfg77/image-super-resolution-tool-en/releases/latest
 
 ## Usage
 
-1. Download `ImageSuperResolutionTool-EN-v1.1.2-Setup.exe`.
+1. Download `ImageSuperResolutionTool-EN-v1.1.3-Setup.exe`.
 2. Run the installer.
 3. Choose an install location.
 4. After installation, the desktop shortcut `Image Super Resolution Tool` will be created.
@@ -39,7 +39,7 @@ https://github.com/qwertasdfg77/image-super-resolution-tool-en/releases/latest
 - Real-ESRGAN Anime and Illustration Model.
 - App icon and desktop shortcut creation logic.
 
-The installer includes a launcher that opens the app UI directly. If Python is not installed system-wide, the app should still open first; then `Install/Check Runtime` downloads the local Python runtime, CUDA PyTorch, and other dependencies.
+The installer includes a launcher that opens the app UI directly. If Python is not installed system-wide, the app should still open first; then `Install/Check Runtime` downloads the local Python runtime, CUDA PyTorch, and other dependencies. The runtime is installed under the current user's local app data folder to avoid write failures when the app is installed on the desktop or in a protected folder.
 
 ## Main Features
 

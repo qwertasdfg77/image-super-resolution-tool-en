@@ -4,7 +4,7 @@
 
 | Version | Status |
 | --- | --- |
-| v1.1.2 | Supported |
+| v1.1.3 | Supported |
 
 ## Download Safety
 

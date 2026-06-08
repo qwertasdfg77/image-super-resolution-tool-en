@@ -5,6 +5,10 @@ set "GUI_EXE=%APP_DIR%Image Super Resolution Tool.exe"
 set "SCRIPT=%APP_DIR%dlss_like_super_resolution_gui.py"
 set "VENV_PYTHONW=%APP_DIR%.venv\Scripts\pythonw.exe"
 set "VENV_PYTHON=%APP_DIR%.venv\Scripts\python.exe"
+if defined LOCALAPPDATA (
+    set "USER_VENV_PYTHONW=%LOCALAPPDATA%\ImageSuperResolutionToolEN\runtime\.venv\Scripts\pythonw.exe"
+    set "USER_VENV_PYTHON=%LOCALAPPDATA%\ImageSuperResolutionToolEN\runtime\.venv\Scripts\python.exe"
+)
 
 if exist "%GUI_EXE%" (
     start "" "%GUI_EXE%"
@@ -18,6 +22,18 @@ if exist "%VENV_PYTHON%" (
             start "" "%VENV_PYTHONW%" "%SCRIPT%"
         ) else (
             start "" "%VENV_PYTHON%" "%SCRIPT%"
+        )
+        exit /b 0
+    )
+)
+
+if defined USER_VENV_PYTHON if exist "%USER_VENV_PYTHON%" (
+    "%USER_VENV_PYTHON%" -c "import sys, tkinter" >nul 2>nul
+    if not errorlevel 1 (
+        if exist "%USER_VENV_PYTHONW%" (
+            start "" "%USER_VENV_PYTHONW%" "%SCRIPT%"
+        ) else (
+            start "" "%USER_VENV_PYTHON%" "%SCRIPT%"
         )
         exit /b 0
     )
